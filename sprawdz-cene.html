@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>sprawdź cene</title>
+</head>
+
+<body>
+    <div class="box5">
+        <img src="bilet.svg" alt="blad" height="90px" class="svg">
+            <p>Kup bilet lub sprawdź cenę</p>
+    </div>
+    <div class="box6">
+        <a href="index.html">
+        <img src="lewo.svg" alt="blad" height="40px" class="svg" style="float: left;"></a>
+        <fieldset>
+            <fieldset>
+                <legend>1.Czy potrzebujesz bilet?</legend>
+                <input type="checkbox" id="zakupbilety" name="zakupbiletu" onchange="funkcja3()"><label for="scales">Tak</label>
+            </fieldset>
+            <fieldset>
+                <legend>2.Wybierz rodzaj biletu </legend>
+                <input type="radio" id="ulgowy" name="bilet" value="2.80">
+                <label for="ulg">Bilet ulgowy (2.80zł)</label>
+                <input type="radio" id="normalny" name="bilet" value="3.60">
+                <label for="ulg">Bilet normalny (3.60zł)</label>
+            <fieldset>
+            <fieldset>
+                <legend>3.Wypisz ilosc biletow</legend>
+                <input type="number" id="ilosc" name="ilosc" min="1" max="15">
+            </fieldset>
+            </fieldset>
+        </fieldset>
+    </div>
+</body>
+</html>

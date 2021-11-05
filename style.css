@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.overlay1 {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 50%;
+  padding-top: 40vh;
+}
+
+.overlay1:hover {
+  background-color: rgba(245, 171, 53, 0.5);
+  transition: 0.7s;
+}
+
+.overlay2 {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 50vw;
+  height: 100vh;
+  width: 50%;
+  padding-top: 40vh;
+}
+
+.overlay2:hover {
+  background-color: rgba(245, 171, 53, 0.5);
+  transition: 0.7s;
+}
+
+.box1 {
+  background-image: url('zdj1.jpg');
+  background-size: 100%;
+  width: 50%;
+  height: 100vh;
+  background-position: bottom;
+  text-align: center;
+  font-size: 1.75vw;
+}
+
+.box1 p {
+  margin: auto;
+  width: 20vw;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.box2 {
+  background-image: url('zdj2.jpg');
+  background-repeat: no-repeat;
+  background-size: 150%;
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+  font-size: 1.75vw;
+}
+
+.box2 p {
+  margin: auto;
+  width: 20vw;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.svg {
+  filter: invert(91%) sepia(98%) saturate(7%) hue-rotate(24deg) brightness(109%)
+    contrast(101%);
+}
+
+.box3,
+.box6 {
+  background-color: black;
+  width: 50%;
+  height: 100vh;
+  color: white;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 5vh;
+}
+
+.box4 {
+  background-image: url('zdj1.jpg');
+  background-size: 100%;
+  width: 50%;
+  height: 100vh;
+  background-position: bottom;
+  text-align: center;
+  font-size: 1.75vw;
+  padding-top: 40vh;
+}
+
+.box4 p {
+  margin: auto;
+  width: 20vw;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  background-color: black;
+  border-radius: 8px;
+  width: 3vw;
+  height: 3.5vh;
+  text-align: center;
+}
+
+input[type='date'] {
+  background-color: black;
+  border-radius: 8px;
+  width: 7vw;
+  height: 3.5vh;
+  text-align: center;
+}
+
+#linia {
+  width: 7vw;
+  height: 3.5vh;
+  text-align: center;
+  background-color: black;
+  border-radius: 8px;
+}
+
+#przystanek_poczatkowy,
+#przystanek_koncowy {
+  width: 15vw;
+  height: 3.5vh;
+  text-align: center;
+  background-color: black;
+  border-radius: 8px;
+}
+
+fieldset {
+  border: 0px;
+  margin: auto;
+}
+
+fieldset p {
+  padding-bottom: 1vh;
+}
+
+legend {
+  font-size: 1.75vw;
+  box-align: center;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+}
+
+fieldset p {
+  font-size: 1.1vw;
+}
+#ukryte1 {
+  margin: auto;
+}
+
+#ukryte2 {
+  display: none;
+}
+
+#ukryte3 {
+  display: none;
+}
+
+#linia_197,
+#linia_259,
+#linia_32,
+#data-godzina {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto;
+  grid-template-areas: '#el1 #el2';
+}
+/*
+#najbpol{
+
+}
+*/
+#najb {
+  width: 50%;
+  height: 5vh;
+}
+
+button {
+  display: none;
+  margin-top: 5vh;
+  width: 15vw;
+  height: 5vh;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+#wynik2 {
+  color: red;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  width: 100%;
+  height: 13vh;
+  border-radius: 30px;
+  margin-top: 1vh;
+  padding: 1vw 1vw 1vw 1vw;
+  border: 1px solid #707070;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas: 'el1 el2' ' el3 el4';
+}
+
+.box5 {
+  background-image: url('zdj2.jpg');
+  background-repeat: no-repeat;
+  background-size: 150%;
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+  font-size: 1.75vw;
+  padding-top: 40vh;
+}
+
+.box5 p {
+  margin: auto;
+  width: 20vw;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+article p {
+  font-size: 0.8vw;
+}
+
+article span {
+  font-size: 1.5vw;
+}
+
+#wybrana_linia {
+  background-color: white;
+  text-align: center;
+  width: 3vw;
+  height: 3vh;
+  border-radius: 20px;
+  color: black;
+  font-size: 1.2vw;
+}
+
+main {
+  display: none;
+}
+
+article .cos {
+  font-size: 1.1vw;
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Sprawdź połączenia</title>
+</head>
+<body>    
+    <div class="box3">
+        <a href="index.html">
+        <img src="prawo.svg" alt="blad" height="40px" class="svg" style="float: right;"></a>
+        <fieldset id="ukryte1">
+            <legend>1.Wybierz linie autubusu</legend>
+            <select name="linia_autubusu" id="linia" onchange="funkcja1()">
+                <option value="197">197</option>
+                <option value="32">32</option>
+                <option value="259">259</option>
+                <option selected>--wybierz cos--</option>
+        </select>
+        </fieldset>
+        <fieldset id="ukryte2">
+            <legend>2.Wybierz przystanek poczatkowy i koncowy</legend>
+            <div id="linia_197" class="linia_197">
+                <div id="el1">
+                <p>Wybierz przystanek poczatkowy</p>
+                <select name="przystanek_poczatkowy" id="przystanek_poczatkowy">
+                    <option selected>Sośnica Osiedle Żeromskiego</option>
+                    <option>Sośnica Wiślana</option>
+                    <option>Sośnica Jedności</option>
+                    <option>Sośnica Michała</option>
+                    <option>Sośnica Apteka</option>
+                    <option>Sośnica Plac Mariacki</option>
+                    <option>Sośnica Drzymały</option>
+                    <option>Sośnica Odrowążów</option>
+                    <option>Gliwice Królewskiej Tamy</option>
+                    <option>Gliwice Sportowa</option>
+                    <option>Gliwice Błog. Czesława</option>
+                    <option>Gliwice Zabrska</option>
+                    <option>Gliwice Jagiellońska</option>
+                    <option>Gliwice Plac Piastów</option>
+                </select></br></br>
+                </div>
+                <div id="el2">
+                <p>Wybierz przystanek koncowy</p>
+                <select name="przystanek_koncowy" id="przystanek_koncowy">
+                    <option>Sośnica Osiedle Żeromskiego</option>
+                    <option>Sośnica Wiślana</option>
+                    <option>Sośnica Jedności</option>
+                    <option>Sośnica Michała</option>
+                    <option>Sośnica Apteka</option>
+                    <option>Sośnica Plac Mariacki</option>
+                    <option>Sośnica Drzymały</option>
+                    <option>Sośnica Odrowążów</option>
+                    <option>Gliwice Królewskiej Tamy</option>
+                    <option>Gliwice Sportowa</option>
+                    <option>Gliwice Błog. Czesława</option>
+                    <option>Gliwice Zabrska</option>
+                    <option>Gliwice Jagiellońska</option>
+                    <option selected>Gliwice Plac Piastów</option>
+                </select></br></br>
+            </div>
+            </div>
+            <div id="linia_32" class="linia_32">
+                <div id="el1">
+                <p>Wybierz przystanek poczatkowy</p>
+                <select name="przystanek_poczatkowy" id="przystanek_poczatkowy">
+                    <option selected>Zabrze Goethego</option>
+                    <option>Zabrze Komenda Policji</option>
+                    <option>Zabrze Politechnika Śląska</option>
+                    <option>Zabrze Kościół Św. Józefa</option>
+                    <option>Zabrze Stadion</option>
+                    <option>Zabrze Osiedle Wyzwolenia</option>
+                    <option>Zabrze Stadion</option>
+                    <option>Sośnica Zespół Szkół</option>
+                    <option>Sośnica Most</option>
+                    <option>Ligota Zabrska Giełda</option>
+                    <option>Zabrze Zabrska Błonie</option>
+                    <option>Ligota Zabrska Kopalnia</option>
+                    <option>Gliwice Górna</option>
+                    <option>Gliwice Jacka</option>
+                    <option>Gliwice Kopalniana</option>
+                    <option>Gliwice Komag</option>
+                    <option>Gliwice Wrocławska</option>
+                    <option>Gliwice Plac Piastów</option>
+                </select></br></br>
+            </div>
+                <div id="el2">
+                <p>Wybierz przystanek koncowy</p>
+                <select name="przystanek_koncowy" id="przystanek_koncowy">
+                    <option selected>Zabrze Goethego</option>
+                    <option>Zabrze Komenda Policji</option>
+                    <option>Zabrze Politechnika Śląska</option>
+                    <option>Zabrze Kościół Św. Józefa</option>
+                    <option>Zabrze Stadion</option>
+                    <option>Zabrze Osiedle Wyzwolenia</option>
+                    <option>Zabrze Stadion</option>
+                    <option>Sośnica Zespół Szkół</option>
+                    <option>Sośnica Most</option>
+                    <option>Ligota Zabrska Giełda</option>
+                    <option>Zabrze Zabrska Błonie</option>
+                    <option>Ligota Zabrska Kopalnia</option>
+                    <option>Gliwice Górna</option>
+                    <option>Gliwice Jacka</option>
+                    <option>Gliwice Kopalniana</option>
+                    <option>Gliwice Komag</option>
+                    <option>Gliwice Wrocławska</option>
+                    <option selected>Gliwice Plac Piastów</option>
+                </select></br></br>
+            </div>
+            </div>
+
+            <div id="linia_259" class="linia_259">
+                <div id="el1">
+                <p>Wybierz przystanek poczatkowy</p>
+                <select name="przystanek_poczatkowy" id="przystanek_poczatkowy">
+                    <option selected>Sosnica Osiedle Zeromskiego</option>
+                    <option>Sosnica Wislana</option>
+                    <option>Sosnica Jedności</option>
+                    <option>Sosnica Michała</option>
+                    <option>Sosnica Apteka</option>
+                    <option>Sosnica Kosciol</option>
+                    <option>Sosnica Odrowazow</option>
+                    <option>Sosnica Drzymały</option>
+                    <option>Sosnica Bema</option>
+                    <option>Sosnica Cmentarz</option>
+                    <option>Gliwice Zajezdnia</option>
+                    <option>Gliwice Towarowa</option>
+                    <option>Gliwice Zameczek Lesny</option>
+                    <option>Gliwice Akacjowa</option>
+                    <option>Gliwice Lindego</option>
+                    <option>Gliwice Dabrowskiego</option>
+                    <option>Gliwice Opolska</option>
+                    <option>Gliwice Dworcowa</option>
+                </select></br></br>
+                </div>
+                <div id="el2">    
+                <p>Wybierz przystanek koncowy</p>
+                <select name="przystanek_koncowy" id="przystanek_koncowy">
+                    <option>Sosnica Osiedle Zeromskiego</option>
+                    <option>Sosnica Wislana</option>
+                    <option>Sosnica Jedności</option>
+                    <option>Sosnica Michała</option>
+                    <option>Sosnica Apteka</option>
+                    <option>Sosnica Kosciol</option>
+                    <option>Sosnica Odrowazow</option>
+                    <option>Sosnica Drzymały</option>
+                    <option>Sosnica Bema</option>
+                    <option>Sosnica Cmentarz</option>
+                    <option>Gliwice Zajezdnia</option>
+                    <option>Gliwice Towarowa</option>
+                    <option>Gliwice Zameczek Lesny</option>
+                    <option>Gliwice Akacjowa</option>
+                    <option>Gliwice Lindego</option>
+                    <option>Gliwice Dabrowskiego</option>
+                    <option>Gliwice Opolska</option>
+                    <option selected>Gliwice Plac Piastów</option>
+                </select></br></br>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset id="ukryte3">
+            <legend>3.Wybierz date i godzine</legend>
+            <div id="data-godzina">
+            <div id="el1">
+            <p>Wybierz date</p>
+            <input type="date" name="data" id="OdKiedy"></br>
+            </div>
+            <div id="el2">
+            <p>Wpisz godzine</p>
+            <input type="number" name="godzina" id="godzina" min="0" max="23"> : 
+            <input type="number" name="godzina" id="minuta" min="0" max="59">
+            </div>
+            </div>
+            <p id="wynik2"></p>
+
+        </fieldset>
+        <button id="przycisk" onclick="funkcja2()"> SZUKAJ AUTOBUSU </button>
+        <main>
+        <article>
+            <p class="el1">ODJAZD ZA:</p>
+            <p class="el2">GODZINA PRZYJAZDU:</br>
+                <span class="cos">15:26</span></p>
+            <p class="el3"><span id="oblicz">32</span>min</p>
+            <p class="el4">GODZINA DOTARCIA:</br>
+                <span class="cos">15:26</span></p>
+        </article>
+        <article>
+            <p class="el1">ODJAZD ZA:</p>
+            <p class="el2">GODZINA PRZYJAZDU:</br>
+                <span class="cos">15:26</span></p>
+            <p class="el3"><span id="oblicz">62</span>min</p>
+            <p class="el4">GODZINA DOTARCIA:</br>
+                <span class="cos">15:26</span></p>
+        </article>
+        <article>
+            <p class="el1">ODJAZD ZA:</p>
+            <p class="el2">GODZINA PRZYJAZDU:</br>
+                <span class="cos">15:26</span></p>
+            <p class="el3"><span id="oblicz">92</span>min</p>
+            <p class="el4">GODZINA DOTARCIA:</br>
+                <span class="cos">15:26</span></p>
+        </article>
+        </main>
+        </div>
+<div class="box4">
+    <img src="bus.svg" alt="blad" height="90px" class="svg">
+            <p>Sprawdź polączenia autobusów</p>
+</div>
+
+<script>
+const wybrana_linia = document.querySelectorAll("#linia option");
+console.log(wybrana_linia);
+const wynik = document.querySelector(".wypisz_linie");
+console.log(wynik);
+const fieldset = document.querySelector("#ukryte2");
+const fieldset2 = document.querySelector("#ukryte3");
+
+const wynik2 = document.querySelector("#wynik2");
+const przycisk=document.querySelector("#przycisk");
+
+
+const linia_197 = document.querySelector("#linia_197");
+const linia_32 = document.querySelector("#linia_32");
+const linia_259 = document.querySelector("#linia_259");
+
+function funkcja1() {
+    for (i = 0; i < wybrana_linia.length; i++) {
+        if (wybrana_linia[0].selected) {
+            linia_197.style.display = "grid";
+            linia_32.style.display = "none";
+            linia_259.style.display = "none";
+            fieldset.style.display = "block";
+            fieldset2.style.display = "block";
+            przycisk.style.display = "block";
+        }
+
+        if (wybrana_linia[1].selected) {
+            linia_197.style.display = "none";
+            linia_32.style.display = "grid";
+            linia_259.style.display = "none";
+            fieldset.style.display = "block";
+            fieldset2.style.display = "block";
+            przycisk.style.display = "block";
+        }
+
+        if (wybrana_linia[2].selected) {
+            linia_197.style.display = "none";
+            linia_32.style.display = "none";
+            linia_259.style.display = "grid";
+            fieldset.style.display = "block";
+            fieldset2.style.display = "block";
+            przycisk.style.display = "block";
+        }
+
+        if (wybrana_linia[3].selected) {
+            linia_197.style.display = "none";
+            linia_32.style.display = "none";
+            linia_259.style.display = "none";
+            fieldset.style.display = "none";
+            fieldset2.style.display = "none";
+            przycisk.style.display = "none";
+        }
+        /*
+        if (wybrana_linia[i].selected) {
+            wynik.innerHTML = wybrana_linia[i].value;
+        }
+        */
+    }
+}
+const najblizszepolaczenia = document.querySelector("main");
+
+    function funkcja2() {
+        najblizszepolaczenia.style.display = "block";
+        const data1 = document.querySelector("#OdKiedy").valueAsDate;
+        console.log(data1.getTime());
+
+        const data2 = new Date();
+        console.log(data2.getTime());
+
+        let rozw = data1.getTime() - data2.getTime();
+        console.log(rozw);
+
+        if (rozw < 0) {
+            wynik2.innerHTML = "*Podata data jest bledna.*";
+            najblizszepolaczenia.style.display = "none";
+        } else {
+            najblizszepolaczenia.style.display = "block";
+            wynik2.innerHTML = "";
+        }
+
+    }
+
+    const zakupbiletu = document.querySelector("#zakupbilety");
+    console.log(zakupbiletu)
+    const ukryte2 = document.querySelector("#ukryte2");
+    console.log(ukryte2);
+
+
+    function funkcja3() {
+        if (zakupbiletu.checked) {
+            ukryte2.style.display = "block";
+        } else {
+            ukryte2.style.display = "none";
+        }
+    }
+
+
+    const bilet1 = document.querySelector("#ulgowy").value;
+    console.log(bilet1);
+    const bilet2 = document.querySelector("#normalny").value;
+    console.log(bilet2);
+    const ilosc = document.querySelector("#ilosc");
+    console.log(ilosc);
+    const finalnacena = document.querySelector("p #cenabiletow");
+
+    function funkcja4() {
+        if (bilet1.checked) {
+            finalnacena.innerHTML = bilet1 * ilosc;
+        } else if (bilet2.checked) {
+            finalnacena.innerHTML = bilet2 * ilosc;
+        } else {
+            finalnacena.innerHTML = "wybierz cos";
+        }
+    }
+
+</script>
+</body>
+</html>
